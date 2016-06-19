@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    .app-list {
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+        .app {
+            height: 130px;
+            margin: 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            .details {
+                padding-left: 20px;
+            }
+        }
+    }
+    .basket {
+        padding: 20px;
+    }
+
+}
