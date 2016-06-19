@@ -20,7 +20,13 @@ class Basket extends React.Component {
     render() {
         return (
             <div className='basket'>
-                Items: ({this.props.items.length})
+                <ul>Products: {this.props.items.map((item) => {
+                   return <li>{item.name}</li>;
+                })}</ul>
+                <p>Items: ({this.props.items.length})</p>
+                <p>Total: £ {this.props.items.reduce((prev, current) => {
+                    return prev + parseFloat(current.price.replace('£', ''));
+                }, 0)}</p>
             </div>
         );
     }

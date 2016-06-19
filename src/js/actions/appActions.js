@@ -15,7 +15,7 @@ class AppActions {
     fetchApps() {
         setTimeout(() => {
             this.setApps(apps);
-        }, 3000);
+        }, 1000);
     }
 
 }

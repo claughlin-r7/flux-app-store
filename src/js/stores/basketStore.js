@@ -9,6 +9,13 @@ class BasketStore {
             items: []
         };
     }
+
+    @bind(actions.buyApp)
+    buyApp(app) {
+        this.setState({
+            items: [...this.state.items, app]
+        });
+    }
 }
 
 export default BasketStore;

@@ -1,7 +1,16 @@
 import React from 'react';
 import Avatar from 'react-avatar';
+import BasketActions from 'actions/basketActions';
 
 class App extends React.Component {
+
+    buyApp = () => {
+        BasketActions.buyApp({
+            name: this.props.name,
+            price: this.props.price
+        });
+    };
+
     render() {
         return (
             <div className='app'>
@@ -9,7 +18,7 @@ class App extends React.Component {
                 <div className='details'>
                     <p>{this.props.name}</p>
                     <p>{this.props.price}</p>
-                    <a href="#" class="button-0">Buy</a>
+                    <a onClick={this.buyApp} class="button-0">Buy</a>
                 </div>
             </div>
         );

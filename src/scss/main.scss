@@ -5,6 +5,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    color: red;
+    cursor: pointer;
+}
+
 .main {
     display: flex;
     flex-direction: row;
