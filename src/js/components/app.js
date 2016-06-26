@@ -14,11 +14,13 @@ class App extends React.Component {
     render() {
         return (
             <div className='app'>
-                <Avatar src={this.props.image} />
+                <Avatar src={this.props.avatar} />
                 <div className='details'>
                     <p>{this.props.name}</p>
                     <p>{this.props.price}</p>
-                    <a onClick={this.buyApp} class="button-0">Buy</a>
+                    <p>Stock: {this.props.stock}</p>
+                    <a disabled={this.props.stock === 0 ? 'disabled': ''}
+                       onClick={this.buyApp} class="button-0">Buy</a>
                 </div>
             </div>
         );

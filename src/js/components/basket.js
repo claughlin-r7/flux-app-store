@@ -1,6 +1,7 @@
 import React from 'react';
 import connectToStores from 'alt-utils/lib/connectToStores';
 import basketStore from 'stores/basketStore';
+import BasketActions from 'actions/basketActions';
 
 @connectToStores
 class Basket extends React.Component {
@@ -17,11 +18,15 @@ class Basket extends React.Component {
         return basketStore.getState();
     }
 
+    remove = (name) => {
+        BasketActions.removeApp(name);
+    }
+
     render() {
         return (
             <div className='basket'>
                 <ul>Products: {this.props.items.map((item) => {
-                   return <li>{item.name}</li>;
+                   return <li>{item.name} <span onClick={this.remove.bind(this, item.name)}>X</span></li>;
                 })}</ul>
                 <p>Items: ({this.props.items.length})</p>
                 <p>Total: £ {this.props.items.reduce((prev, current) => {

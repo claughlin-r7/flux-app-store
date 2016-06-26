@@ -25,7 +25,7 @@ class AppList extends React.Component {
 
     renderAppList = () => {
         return this.props.apps.map((app) => {
-            return <App image={app.avatar} name={app.name} price={app.price} />
+            return <App {...app} />
         })
     };
 

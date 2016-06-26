@@ -2,51 +2,61 @@ module.exports = [{
     "id": 1,
     "name": "Duobam",
     "avatar": "https://robohash.org/assumendaarchitectoofficiis.jpg?size=50x50&set=set1",
-    "price": "£8.12"
+    "price": "£8.12",
+    "stock": 10
 }, {
     "id": 2,
     "name": "Cardify",
     "avatar": "https://robohash.org/vitaequieveniet.png?size=50x50&set=set1",
-    "price": "£6.82"
+    "price": "£6.82",
+    "stock": 5
 }, {
     "id": 3,
     "name": "Stringtough",
     "avatar": "https://robohash.org/velitcupiditateeius.bmp?size=50x50&set=set1",
-    "price": "£0.76"
+    "price": "£0.76",
+    "stock": 3
 }, {
     "id": 4,
     "name": "Pannier",
     "avatar": "https://robohash.org/cumconsequunturtempore.png?size=50x50&set=set1",
-    "price": "£2.66"
+    "price": "£2.66",
+    "stock": 7
 }, {
     "id": 5,
     "name": "Trippledex",
     "avatar": "https://robohash.org/utdoloremcum.jpg?size=50x50&set=set1",
-    "price": "£6.89"
+    "price": "£6.89",
+    "stock": 3
 }, {
     "id": 6,
     "name": "Duobam",
     "avatar": "https://robohash.org/velmolestiaequia.bmp?size=50x50&set=set1",
-    "price": "£5.97"
+    "price": "£5.97",
+    "stock": 9
 }, {
     "id": 7,
     "name": "Tres-Zap",
     "avatar": "https://robohash.org/veroquiaest.bmp?size=50x50&set=set1",
-    "price": "£5.46"
+    "price": "£5.46",
+    "stock": 3
 }, {
     "id": 8,
     "name": "Treeflex",
     "avatar": "https://robohash.org/ettemporaneque.png?size=50x50&set=set1",
-    "price": "£8.33"
+    "price": "£8.33",
+    "stock": 4
 }, {
     "id": 9,
     "name": "Stronghold",
     "avatar": "https://robohash.org/eaquesimiliquevoluptatem.bmp?size=50x50&set=set1",
-    "price": "£8.56"
+    "price": "£8.56",
+    "stock": 2
 }, {
     "id": 10,
     "name": "Bitwolf",
     "avatar": "https://robohash.org/etvoluptaspraesentium.png?size=50x50&set=set1",
-    "price": "£0.54"
+    "price": "£0.54",
+    "stock": 1
 }];
 

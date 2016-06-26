@@ -6,7 +6,8 @@ class BasketActions {
 
     constructor() {
         this.generateActions(
-            'buyApp'
+            'buyApp',
+            'removeApp'
         );
     }
 

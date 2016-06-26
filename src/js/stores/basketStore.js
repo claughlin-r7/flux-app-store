@@ -16,6 +16,17 @@ class BasketStore {
             items: [...this.state.items, app]
         });
     }
+
+    @bind(actions.removeApp)
+    removeApp(name) {
+        let updatedApps = [...this.state.items];
+        updatedApps = updatedApps.filter((app) => {
+            return app.name !== name;
+        });
+        this.setState({
+            items: updatedApps
+        });
+    }
 }
 
 export default BasketStore;
